@@ -1,0 +1,125 @@
+//author: Om Arya
+//last updated: 11/9/22
+//location: AP Comp Sci Block 8
+//purpose: simplify and display fraction
+//description: This program prompts for and inputs a fraction, then computes and displays its simplified form.
+import java.util.Scanner;
+public class FractionDisplay {
+   private static Scanner in = new Scanner(System.in);
+   public static void main(String[] args) {
+       String frac, simpFrac;
+       int num, den, gcd;
+      
+       frac = getFrac();
+
+
+       num = getNum(frac);
+
+
+       den = getDen(frac);
+
+
+       gcd = getGcd(frac, num, den);
+
+
+       simpFrac = simplify(num, den, gcd);
+
+
+       displaySimpFrac(frac, simpFrac);
+
+
+   }
+   public static String getFrac() {
+       String frac;
+      
+       System.out.println("Please enter a fraction (numerator/denominator) or integer.");
+       frac = in.next();
+
+
+       return frac;
+   }
+   public static int getGcd(String frac, int num, int den) {
+       int gcd = 1;
+
+
+       if (num > den) {
+           int i = num - 1;
+           while(i > 1) {
+               if(num % i == 0 && den % i == 0) {
+                   gcd = i;
+               }
+               else {
+                   i--;
+               }
+           }
+       }
+       else if (den > num) {
+           int i = den - 1;
+           while(i > 1) {
+               if(num % i == 0 && den % i == 0) {
+                   gcd = i;
+               }
+               else {
+                   i--;
+               }
+           }
+       }
+       else {
+           gcd = num;
+       }
+
+
+       return gcd;
+   }
+   public static int getNum(String frac) {
+       int num;
+
+
+       if (frac.indexOf('/') >= 0) {
+           num = Integer.parseInt(frac.substring(0, frac.indexOf('/')));
+       }
+       else {
+           num = Integer.parseInt(frac);
+       }
+
+
+       return num;
+   }
+   public static int getDen(String frac) {
+       int den;
+
+
+       if (frac.indexOf('/') >= 0) {
+           den = Integer.parseInt(frac.substring(frac.indexOf('/') + 1, frac.length()));
+       }
+       else {
+           den = 1;
+       }
+
+
+       return den;
+   }
+   public static String simplify(int num, int den, int gcd) {
+       String simpFrac;
+       int simpNum, simpDen;
+
+
+       if (num == 0) {
+           simpFrac = "0";
+       }
+       else if (den == 1) {
+           simpFrac = Integer.toString(num);
+       }
+       else {
+           simpNum = num / gcd;
+           simpDen = den / gcd;
+           simpFrac = Integer.toString(simpNum) + "/" + Integer.toString(simpDen);
+       }
+
+
+       return simpFrac;
+   }
+   public static void displaySimpFrac(String frac, String simpFrac) {
+       System.out.println("The simplified form of \"" + frac + "\" is " + simpFrac + ".");
+   }
+}
