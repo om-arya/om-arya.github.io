@@ -1,3 +1,3 @@
-####Hi, I'm
-#Om Arya
-####Tech enthusiast
+#### Hi, I'm
+# Om Arya
+#### Tech enthusiast
