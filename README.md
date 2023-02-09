@@ -1,2 +1,2 @@
-<center> #### Hi, I'm </center>
-<center> # Om Arya </center>
+#### Hi, I'm
+# Om Arya
