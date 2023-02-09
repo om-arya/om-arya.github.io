@@ -1,1 +1,3 @@
-# om-arya.github.io
+####Hi, I'm
+#Om Arya
+####Tech enthusiast
