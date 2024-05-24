@@ -1,6 +1,5 @@
 ## About
 This repository serves as a host for my personal portfolio website.
-(screenshot)
 
 ### Built With ⚒️
 * [![JavaScript][JS.js]][JS-url]
