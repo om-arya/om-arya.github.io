@@ -1,4 +1,5 @@
-My personal portfolio website.
+## About
+This repository serves as a host for my personal portfolio website.
 (screenshot)
 
 ### Built With ⚒️
