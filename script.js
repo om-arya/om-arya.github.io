@@ -18,12 +18,19 @@ window.onscroll = () => {
     });
 };
 
-// Scroll reveal
+// Scroll reveal effect on page load
 ScrollReveal({
     reset: true,
     distance: '80px',
-    duration: 2000,
+    duration: 1500,
     delay: 200,
 });
 
 ScrollReveal().reveal('.home-content', { origin: 'top' });
+ScrollReveal().reveal('.home-content h1', { origin: 'left'});
+
+// Type welcome message
+const typed = new Typed('.typed-text', {
+    strings: ['Welcome to my portfolio.'],
+    typeSpeed: 80,
+});
