@@ -13,7 +13,7 @@
 
 :root {
     --bg-main-color: white;
-    --bg-second-color: floralwhite;
+    --bg-second-color: rgb(249, 249, 249);
     --text-main-color: black;
     --text-second-color: darksalmon;
 }
@@ -109,18 +109,18 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid var(--text-second-color);
+    border: .2rem solid var(--text-main-color);
     border-radius: 100%;
     font-size: 2rem;
-    color: var(--text-second-color);
-    margin: 3rem 1.5rem 3rem 0;
+    color: var(--text-main-color);
+    margin: 1rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 
 .social-media a:hover {
-    background: var(--text-second-color);
+    background: var(--text-main-color);
     color: var(--bg-main-color);
-    box-shadow: 0 0 1rem var(--text-second-color);
+    box-shadow: 0 0 1rem var(--text-main-color);
 }
 
 .btn-1 {
@@ -128,7 +128,7 @@ span {
     padding: 1rem 2.8rem;
     background: var(--text-second-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--text-second-color);
+    font-size: 1.6rem;
     color: var(--bg-main-color);
     letter-spacing: .1rem;
     font-weight: 600;
@@ -136,15 +136,16 @@ span {
 }
 
 .btn-1:hover {
-    box-shadow: none;
+    box-shadow: 0 0 1rem var(--text-second-color);
 }
 
 .btn-2 {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--bg-main-color);
-    border: .05rem solid var(--text-main-color);
+    border: .2rem solid var(--text-main-color);
     border-radius: 4rem;
+    font-size: 1.6rem;
     color: var(--text-main-color);
     letter-spacing: .1rem;
     font-weight: 600;
@@ -154,6 +155,7 @@ span {
 .btn-2:hover {
     background: var(--text-main-color);
     color: var(--bg-main-color);
+    box-shadow: 0 0 1rem var(--text-main-color);
 }
 
 .about {
@@ -256,9 +258,17 @@ span {
     border-radius: 50%;
 }
 
-.portfolio-layer a i {
+.projects-layer a i {
     font-size: 2rem;
     color: var(--bg-main-color);
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-second-color);
 }
 
 .contact h2 {
