@@ -4,11 +4,14 @@
 <head>
     <title>Om Arya | Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <script src="script.js"></script>
-    <header>
+
+    <!-- HEADER -->
+    <header class="header">
         <a href="#" class="logo">Om Arya</a>
 
         <nav class="navbar">
@@ -20,28 +23,41 @@
         </nav>
     </header>
 
-    <section id="home">
-        <div class="text">
-            <h2>Hi, I'm</h2>
-            <h1>Om Arya.</h1>
-            <h2>Welcome to my portfolio.</h2>
-            <a href="#projects">View Projects</a>
-            <a href="file:///Users/omarya/Documents/Om_Arya_Resume.pdf">View Resume</a>
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I'm</h3>
+            <h1><span>Om Arya.</span></h1>
+            <h3>Welcome to my portfolio.</h2>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/om-arya/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/om-arya"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="#projects" class="projects-btn">View Projects</a>
+            <a href="file:///Users/omarya/Documents/Om_Arya_Resume.pdf" class="resume-btn">View Resume</a>
+
+            <div class="home-img">
+                <img src="me.jpeg" alt="me.jpeg">
+            </div>
         </div>
-        <img src="me.jpeg">
     </section>
 
-    <section class="about">
-        <h1>About Me</h1>
-        <p>
-            I’m pursuing a B.Sc in Computer Science at the University of Maryland, College Park, with minors in Math and Statistics. 
-            Passionate about creating innovative solutions for real demands, I'm aspiring to become a full stack developer. 
-            When I'm not coding, I enjoy travelling, fitness, reading, and spending time with friends and family.
-        </p>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Computer Science Student @ UMD</h3>
+            <p>
+                I’m pursuing a B.Sc in Computer Science at the University of Maryland, College Park, with minors in Math and Statistics. 
+                Passionate about creating innovative solutions for real demands, I'm aspiring to become a full stack developer. 
+                When I'm not coding, I enjoy travelling, fitness, reading, and spending time with friends and family.
+            </p>
+        </div>
     </section>
     
-    <section id="projects">
-        <h1>My Projects</h1>
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
         <div class="gymbro">
             GymBro
         </div>
@@ -56,19 +72,21 @@
         </div>
     </section>
 
-    <section class="tech-stack">
+    <!-- TECH STACK -->
+    <section class="tech-stack" id="tech-stack">
         <h1>My Tech Stack</h1>
         Git/GitHub, Django, Spring Boot, Java, Python, C, C++, SQL, Linux/CLI, Docker,
         CSS, HTML, JavaScript, React, Node.js
     </section>
 
-    <footer class="contact">
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
         <h1>Contact Me</h1>
         <a href="tel:571-352-6557">+1 571.352.6557</a><br/>
         <a href="mailto:om.arya0577@gmail.com">om.arya0577@gmail.com</a><br/>
         <a href="https://www.linkedin.com/in/om-arya/">linkedin.com/om-arya</a><br/>
         <a href="https://www.github.com/om-arya">github.com/om-arya</a>
-    </footer>
+    </section>
 
 </body>
 </html>
