@@ -225,12 +225,12 @@ section {
 }
 
 .projects-box img {
-    width: 100%;
+    width: 20%;
     transition: .5s ease;
 }
 
 .projects-box:hover img {
-    width: 100%;
+    width: 30%;
 }
 
 .projects-box .projects-layer {
@@ -281,7 +281,7 @@ section {
 /*  TECH STACK  */
 
 .tech-stack {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     gap: 2rem;
