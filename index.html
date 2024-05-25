@@ -12,13 +12,15 @@
 
     <!-- HEADER -->
     <header class="header">
-        <a href="#" class="logo">Om Arya</a>
+        <a href="https://om-arya.github.io/" class="logo">Om Arya</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#tech-stack">Tech Stack</a>
-            <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -35,15 +37,15 @@
             </div>
             <a href="#projects" class="btn-1">View Projects</a>
             <a href="file:///Users/omarya/Documents/Om_Arya_Resume.pdf" class="btn-2">View Resume</a>
-
-            <div class="home-img">
-                <img src="me.jpeg" alt="me.jpeg">
-            </div>
         </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/me.jpeg" alt="me.jpeg">
+        </div>
+        
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Computer Science Student @ UMD</h3>
@@ -58,49 +60,75 @@
     <!-- PROJECTS -->
     <section class="projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
+
         <div class="projects-container">
             <div class="projects-box">
                 <img src="#"></img>
-                <h3>GymBro</h3>
-                <p>Coming Soon</p>
-                <a href="#" class="btn-1">GitHub Repository</a>
+                <div class="projects-layer">
+                    <h4>GymBro</h4>
+                    <p>Coming Soon</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
             </div>
             <div class="projects-box">
                 <img src="#"></img>
-                <h3>Rebrief</h3>
-                <p>Coming Soon</p>
-                <a href="#" class="btn-1">GitHub Repository</a>
+                <div class="projects-layer">
+                    <h4>Rebrief</h4>
+                    <p>Coming Soon</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
             </div>
             <div class="projects-box">
                 <img src="#"></img>
-                <h3>T.O.M. - Time Over Management</h3>
-                <p>Coming Soon</p>
-                <a href="#" class="btn-1">GitHub Repository</a>
+                <div class="projects-layer">
+                    <h4>T.O.M. - Time Over Management</h4>
+                    <p>Coming Soon</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
             </div>
             <div class="projects-box">
                 <img src="#"></img>
-                <h3>24 Game</h3>
-                <p>Coming Soon</p>
-                <a href="#" class="btn-1">GitHub Repository</a>
+                <div class="projects-layer">
+                    <h4>24 Game</h4>
+                    <p>Coming Soon</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- TECH STACK -->
     <section class="tech-stack" id="tech-stack">
-        <h1>My Tech Stack</h1>
+        <h2 class="heading">My <span>Tech Stack</span></h2>
         Git/GitHub, Django, Spring Boot, Java, Python, C, C++, SQL, Linux/CLI, Docker,
         CSS, HTML, JavaScript, React, Node.js
     </section>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-        <h1>Contact Me</h1>
-        <a href="tel:571-352-6557">+1 571.352.6557</a><br/>
-        <a href="mailto:om.arya0577@gmail.com">om.arya0577@gmail.com</a><br/>
-        <a href="https://www.linkedin.com/in/om-arya/">linkedin.com/om-arya</a><br/>
-        <a href="https://www.github.com/om-arya">github.com/om-arya</a>
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="mailto:om.arya0577@gmail.com">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Om Arya | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,8 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -64,6 +67,12 @@ span {
 .navbar a:hover,
 .navbar a.active {
     color: var(--text-second-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-main-color);
+    display: none;
 }
 
 .home {
@@ -155,6 +164,10 @@ span {
     background: var(--bg-second-color);
 }
 
+.about-img img {
+    width: 35vw;
+}
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
@@ -176,36 +189,147 @@ span {
 }
 
 .projects h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
-.projects-container {
-    display: flex;
-    justify-content: center;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .projects-container .projects-box {
-    flex: 1 1 30rem;
-    background: var(--bg-second-color);
-    padding: 3rem 2rem 4rem;
+    position: relative;
     border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-main-color);
+    box-shadow: 0 0 1rem var(--bg-second-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.projects-box img {
+    width: 100%;
     transition: .5s ease;
 }
 
-.projects-container .projects-box:hover {
-    border-color: var(--text-second-color);
-    transform: scale(1.02);
+.projects-box:hover img {
+    width: 100%;
 }
 
-.projects-box h3 {
-    font-size: 2.6rem;
+.projects-box .projects-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--text-second-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
 }
 
-.projects-box p {
+.projects-box:hover .projects-layer {
+    transform: translateY(0);
+}
+
+.projects-layer h4 {
+    font-size: 3rem;
+}
+
+.projects-layer p {
     font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    margin: .3rem 0 1rem;
+}
+
+.projects-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-main-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--bg-main-color);
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-main-color);
+    background: var(--bg-second-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn-1 {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-second-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--text-second-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--text-second-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-second-color);
 }
