@@ -33,10 +33,6 @@ section {
     padding: 10rem 9% 2rem;
 }
 
-span {
-    
-}
-
 .heading {
     text-align: center;
     font-weight: 600;
@@ -47,15 +43,17 @@ span {
 
 .header {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-main-color);
+    padding: 2rem 9% 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    backdrop-filter: blur(3px);
 }
 
 .logo {
