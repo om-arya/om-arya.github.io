@@ -21,7 +21,6 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    color: #121213;
 }
 
 body {
@@ -89,6 +88,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
 }
 
 .home-img img {
@@ -182,6 +182,7 @@ section {
 }
 
 .about-img img {
+    margin-right: 5rem;
     width: 35vw;
 }
 
@@ -198,7 +199,7 @@ section {
 }
 
 .about-content p {
-    text-align: center;
+    text-align: left;
     font-size: 1.8rem;
 }
 

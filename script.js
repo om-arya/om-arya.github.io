@@ -43,7 +43,7 @@ const switchMode = () => {
         root.style.setProperty('--bg-main-color', '#0f0f0f');
         root.style.setProperty('--bg-second-color', '#151516');
         root.style.setProperty('--text-main-color', 'white');
-        root.style.setProperty('--text-second-color', '#3455a1');
+        root.style.setProperty('--text-second-color', '#05a0aa');
         modeToggleIcon.classList.remove('bx-sun');
         modeToggleIcon.classList.add('bx-moon');
     } else {
