@@ -20,10 +20,8 @@ window.onscroll = () => {
 
 // Scroll reveal effect on page load
 ScrollReveal({
-    reset: true,
-    distance: '80px',
+    distance: '10rem',
     duration: 1500,
-    delay: 200,
 });
 
 ScrollReveal().reveal('.home-content', { origin: 'top' });
