@@ -13,11 +13,12 @@
         <a href="https://om-arya.github.io/" class="logo">Om Arya</a>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#tech-stack">Tech Stack</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active" id="home-nav">Home</a>
+            <a href="#about" id="about-nav">About</a>
+            <a href="#projects" id="projects-nav">Projects</a>
+            <a href="#tech-stack" id="tech-stack-nav">Tech Stack</a>
+            <a href="#contact" id="contact-nav">Contact</a>
+            <a onclick="switchMode()" id="mode-toggle"><i class='bx bx-sun'></i></a>
         </nav>
     </header>
 
@@ -28,12 +29,15 @@
             <h1>Om Arya.</h1>
             <h3><span class="typed-text"><!--Welcome to my portfolio--></span></h3>
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/om-arya/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="https://github.com/om-arya" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="mailto:om.arya0577@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                <a title="My LinkedIn&#10;https://www.linkedin.com/in/om-arya/"
+                   href="https://www.linkedin.com/in/om-arya/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a title="My GitHub&#10;https://www.github.com/om-arya/"
+                   href="https://github.com/om-arya" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a title="Email me&#10;om.arya0577@gmail.com"
+                   href="mailto:om.arya0577@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
             </div>
-            <a href="#projects" class="btn-1">My Projects</a>
-            <a href="file:///Users/omarya/Documents/Om_Arya_Resume.pdf" class="btn-2">My Resume</a>
+            <a title="See my projects" href="#projects" class="btn-1">My Projects</a>
+            <a title="See my resume" href="file:///Users/omarya/Documents/Om_Arya_Resume.pdf" class="btn-2">My Resume</a>
         </div>
     </section>
 
@@ -104,19 +108,19 @@
     <!-- CONTACT -->
     <section class="contact" id="contact">
         <h2 class="heading">Let's Connect</h2>
-        <h3>Feel free to reach out with any questions or opportunities!</h3>
+        <h3>Feel free to reach out with any questions, collaboration ideas, or just to say hello.<br>I'll get back to you as soon as I can.</h3>
 
         <form action="https://formspree.io/f/mqkrogqy" method="POST">
             <div class="input-box">
-                <input type="text" name="full name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="Full Name" placeholder="Full name*" required>
+                <input type="email" name="Email" placeholder="Email address*" required>
             </div>
             <div class="input-box">
-                <input type="number" name="phone number" placeholder="Phone #">
-                <input type="text" name="subject" placeholder="Email Subject" required>
+                <input type="number" name="Mobile Number" placeholder="Mobile number">
+                <input type="text" name="Subject" placeholder="Message subject*" required>
             </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn-1">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your message*" required></textarea>
+            <input title="Send to om.arya0577@gmail.com" type="submit" value="Send message" class="btn-1">
     </section>
 
     <!-- FOOTER -->
@@ -125,7 +129,7 @@
             <p>&copy; 2024 by Om Arya | All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            <a title="Back to top" href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </div>
     </footer>
 

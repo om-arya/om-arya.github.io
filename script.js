@@ -32,3 +32,26 @@ const typed = new Typed('.typed-text', {
     strings: ['Welcome to my portfolio.'],
     typeSpeed: 80,
 });
+
+// Switch between light/dark mode
+const switchMode = () => {
+    let root = document.querySelector(':root');
+    let currentBgColor = getComputedStyle(root).getPropertyValue('--bg-main-color').trim();
+    let modeToggleIcon = document.querySelector('#mode-toggle i');
+
+    if (currentBgColor === 'white') {
+        root.style.setProperty('--bg-main-color', '#0f0f0f');
+        root.style.setProperty('--bg-second-color', '#151516');
+        root.style.setProperty('--text-main-color', 'white');
+        root.style.setProperty('--text-second-color', '#3455a1');
+        modeToggleIcon.classList.remove('bx-sun');
+        modeToggleIcon.classList.add('bx-moon');
+    } else {
+        root.style.setProperty('--bg-main-color', 'white');
+        root.style.setProperty('--bg-second-color', '#f9f9f9');
+        root.style.setProperty('--text-main-color', 'black');
+        root.style.setProperty('--text-second-color', '#fa5f55');
+        modeToggleIcon.classList.remove('bx-moon');
+        modeToggleIcon.classList.add('bx-sun');
+    }
+}

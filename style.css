@@ -13,19 +13,21 @@
 
 :root {
     --bg-main-color: white;
-    --bg-second-color: rgb(249, 249, 249);
+    --bg-second-color: #f9f9f9;
     --text-main-color: black;
-    --text-second-color: darksalmon;
+    --text-second-color: #fa5f55;
 }
 
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    color: #121213;
 }
 
 body {
     background: var(--bg-main-color);
     color: var(--text-main-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 section {
@@ -64,15 +66,21 @@ section {
 }
 
 .navbar a {
+    margin-left: 4rem;
     font-size: 1.7rem;
     color: var(--text-main-color);
-    margin-left: 4rem;
     transition: .3s;
 }
 
 .navbar a:hover,
 .navbar a.active {
     color: var(--text-second-color);
+}
+
+#mode-toggle {
+    font-size: 2.5rem;
+    color: var(--text-second-color);
+    cursor: pointer;
 }
 
 /*  HOME  */
@@ -117,7 +125,7 @@ section {
     border-radius: 100%;
     font-size: 2rem;
     color: var(--text-main-color);
-    margin: 1rem 1.5rem 3rem 0;
+    margin: 1rem 1rem 3rem 0;
     transition: .5s ease;
 }
 
@@ -129,6 +137,7 @@ section {
 
 .btn-1 {
     display: inline-block;
+    margin-right: 1rem;
     padding: 1rem 2.8rem;
     background: var(--text-second-color);
     border-radius: 4rem;
@@ -323,16 +332,17 @@ section {
     cursor: pointer;
 }
 
+/*  FOOTER  */
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--bg-second-color);
+    padding: 1rem 9%;
+    background: black;
+    color: white;
 }
-
-/*  FOOTER  */
 
 .footer-text p {
     font-size: 1.5rem;
