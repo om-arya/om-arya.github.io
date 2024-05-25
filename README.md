@@ -1,5 +1,8 @@
 ## About
 This repository serves as a host for my personal portfolio website.
+<p align="center">
+  <img src="screenshots/portfolio-screenshot.png" alt="portfolio-screenshot.png" width="450">
+</p>
 
 ### Built With ⚒️
 * [![JavaScript][JS.js]][JS-url]
