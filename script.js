@@ -1,3 +1,12 @@
+// Start at beginning of page on reload
+window.onload = () => {
+    window.scrollTo(0, 0);
+};
+
+window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+};
+
 // Highlight navbar links as they are scrolled on
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
