@@ -1,6 +1,6 @@
 ## About
 <p align="center">
-  <img src="screenshots/portfolio-screenshot.png" alt="portfolio-screenshot.png" width="300">
+  <img src="screenshots/home-screenshot.png" alt="home-screenshot.png" width="300">
 </p>
 This repository serves as a host for my personal portfolio website.
 
