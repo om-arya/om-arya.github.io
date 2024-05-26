@@ -4,8 +4,8 @@ ScrollReveal({
     duration: 1500,
 });
 
-ScrollReveal().reveal('.home-content', { origin: 'top' });
-ScrollReveal().reveal('.home-content h1', { origin: 'left'});
+ScrollReveal().reveal('.home-container', { origin: 'top' });
+ScrollReveal().reveal('.home-container h1', { origin: 'left'});
 
 // Type welcome message
 const typed = new Typed('.typed-text', {
