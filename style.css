@@ -209,8 +209,65 @@ section {
 
 /*  PROJECTS  */
 
-.projects h2 {
-    margin-bottom: 4rem;
+.projects h3 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.projects .projects-container {
+    display: flex;
+    padding-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.projects h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.projects p {
+    margin-bottom: 3rem;
+    padding: 0 10rem 0 10rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.projects p a:link {
+    color: var(--text-second-color);
+    text-decoration: underline;
+}
+
+.projects p a:active,
+.projects p a:hover,
+.projects p a:visited {
+    color: purple;
+}
+
+.projects ul {
+    margin-bottom: 3rem;
+    padding: 0 10rem 0 10rem;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.projects img {
+    margin-bottom: 1rem;
+}
+
+.projects #tom-img  {
+    width: 50rem;
+    height: auto;
+}
+
+.projects #twentyfour-img  {
+    width: 47rem;
+    height: auto;
 }
 
 /*  TECH STACK  */
