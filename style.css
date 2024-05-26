@@ -26,7 +26,7 @@ html {
 body {
     background: var(--bg-main-color);
     color: var(--text-main-color);
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.5s ease, color .5s ease;
 }
 
 img {
@@ -82,7 +82,6 @@ section {
 
 #mode-toggle {
     font-size: 2.5rem;
-    color: var(--text-second-color);
     cursor: pointer;
 }
 

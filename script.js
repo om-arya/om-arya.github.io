@@ -1,12 +1,3 @@
-// Start at beginning of page on reload
-window.onload = () => {
-    window.scrollTo(0, 0);
-};
-
-window.onbeforeunload = () => {
-    window.scrollTo(0, 0);
-};
-
 // Highlight navbar links as they are scrolled on
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -53,7 +44,7 @@ const switchMode = () => {
         root.style.setProperty('--bg-second-color', '#151516');
         root.style.setProperty('--text-main-color', 'white');
         root.style.setProperty('--text-second-color', '#05a0aa');
-        modeToggleIcon.classList.remove('bx-sun');
+        modeToggleIcon.classList.remove('bxs-sun');
         modeToggleIcon.classList.add('bx-moon');
     } else {
         root.style.setProperty('--bg-main-color', 'white');
@@ -61,6 +52,6 @@ const switchMode = () => {
         root.style.setProperty('--text-main-color', 'black');
         root.style.setProperty('--text-second-color', '#fa5f55');
         modeToggleIcon.classList.remove('bx-moon');
-        modeToggleIcon.classList.add('bx-sun');
+        modeToggleIcon.classList.add('bxs-sun');
     }
 }
