@@ -6,6 +6,7 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-container', { origin: 'top' });
 ScrollReveal().reveal('.home-container h1', { origin: 'left'});
+ScrollReveal().reveal('.projects-box, .tech-stack-container div', { origin: 'bottom'});
 
 // Type welcome message
 const typed = new Typed('.typed-text', {
