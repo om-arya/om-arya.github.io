@@ -85,7 +85,7 @@ section {
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
     .logo,
     #mode-toggle {
         font-size: 2.2rem;
@@ -97,7 +97,7 @@ section {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .logo,
     #mode-toggle {
         font-size: 2rem;
@@ -404,6 +404,10 @@ section {
     .projects-box ul,
     .projects-box .button-container {
         padding: 0 0 0 0;
+    }
+
+    .projects-box img {
+        margin-bottom: 2rem;
     }
 
     .projects .button-container {
