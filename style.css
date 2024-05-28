@@ -57,7 +57,7 @@ section {
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(3px);
 }
 
@@ -85,51 +85,39 @@ section {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1300px) {
-    .logo,
-    #mode-toggle {
-        font-size: 2.2rem;
-    } 
-
+@media screen and (max-width: 900px) {
     .navbar a {
-        font-size: 1.5rem;
-        margin-left: 3rem;
+        margin-left: 2.5rem;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .logo,
-    #mode-toggle {
-        font-size: 2rem;
-    } 
-
+@media screen and (max-width: 800px) {
     .navbar a {
-        font-size: 1.4rem;
-        margin-left: 2rem;
+        margin-left: 1.3rem;
     }
 }
 
 @media screen and (max-width: 700px) {
     .logo,
     #mode-toggle {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     } 
 
     .navbar a {
-        font-size: 1.3rem;
-        margin-left: 1.7rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .logo,
     #mode-toggle {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     } 
 
     .navbar a {
-        font-size: 1.2rem;
         margin-left: .5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -281,7 +269,7 @@ section {
     display: flex;
     margin-bottom: 6rem;
     padding: 5rem;
-    box-shadow: 0 0 2rem var(--text-main-color);
+    box-shadow: 0 0 .5rem rgba(128, 128, 128, 1);
 }
 
 .reverse-box {
