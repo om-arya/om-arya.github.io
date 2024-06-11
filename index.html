@@ -1,227 +1,23 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Om Arya</title>
     <link rel="icon" href="assets/oa-initials.jpg">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylsheet" href="style.css">
+    <title>Om Arya</title>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="header">
-        <a href="https://om-arya.github.io/" class="logo">Om Arya</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active" id="home-nav">Home</a>
-            <a href="#about" id="about-nav">About</a>
-            <a href="#projects" id="projects-nav">Projects</a>
-            <a href="#tech-stack" id="tech-stack-nav">Tech Stack</a>
-            <a href="#contact" id="contact-nav">Contact</a>
-            <a onclick="switchMode()" id="mode-toggle"><i class='bx bx-moon'></i></a>
-        </nav>
-    </header>
-
-    <!-- HOME -->
-    <section class="home" id="home">
-        <div id="backgroundCanvas"></div>
-        <div class="home-container">
-            <h3>Hi, I'm</h3>
-            <h1>Om Arya.</h1>
-            <h3><span class="typed-text"><!--Welcome to my portfolio--></span></h3>
-            <div class="social-media">
-                <a title="Visit my LinkedIn profile&#10;https://www.linkedin.com/in/om-arya/"
-                   href="https://www.linkedin.com/in/om-arya/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                <a title="Visit my GitHub profile&#10;https://www.github.com/om-arya/"
-                   href="https://github.com/om-arya" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a title="Email me&#10;om.arya0577@gmail.com"
-                   href="mailto:om.arya0577@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
-            </div>
-            <a title="View my projects" href="#projects" class="btn-1">My Projects</a>
-            <a title="View my resume" href="assets/project-img/comingsoon.jpeg" target="_blank" class="btn-2">My Resume</a>
-        </div>
-    </section>
-
+     
     <!-- ABOUT -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="assets/me.jpeg" alt="me.jpeg">
-        </div>
 
-        <div class="about-content">
-            <h2 class="heading">About Me</h2>
-            <h3>Computer Science Student @ UMD</h3>
-            <p>
-                I’m pursuing a B.Sc in Computer Science at the University of Maryland, College Park, with minors in Math and Statistics. 
-                Passionate about creating innovative solutions for real demands, I'm aspiring to become a full stack developer. 
-                When I'm not coding, I enjoy travelling, fitness, reading, and spending time with friends and family.
-            </p>
-        </div>
-    </section>
-    
     <!-- PROJECTS -->
-    <section class="projects" id="projects">
-        <h2 class="heading">My Projects</h2>
-        <h3>Projects I've created and am currently working on, individually and in collaboration.</h3>
 
-        <div class="projects-container">
-            <div class="projects-box reverse-box tom-box">
-                <img src="assets/project-img/tom-img.png" id="tom-img"></img>
-                <div>
-                    <h4>T.O.M. - Time Over Management</h4>
-                    <p>
-                        Working with a team of 5 to create a talking cat web app that helps college students with time management.<br>
-                        My team: 
-                        <a title="Visit Stephen Wu's GitHub profile&#10;https://github.com/heavens-potato"
-                           href="https://github.com/heavens-potato" target="_blank">Stephen Wu</a>, 
-                        <a title="Visit Hasan Ege's GitHub profile&#10;https://github.com/hasane1"
-                           href="https://github.com/hasane1" target="_blank">Hasan Ege</a>, 
-                        <a title="Visit Claire Chen's GitHub profile&#10;https://github.com/cc13985"
-                           href="https://github.com/cc13985" target="_blank">Claire Chen</a>, and 
-                        <a title="Visit Justin Glazer's GitHub profile&#10;https://github.com/justin-glazer"
-                           href="https://github.com/justin-glazer" target="_blank">Justin Glazer</a>.
-                        <ul>
-                            Built with:
-                            <li>Django</li>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </p>
-                    <div class="button-container">
-                        <a title="Visit the T.O.M. live website&#10;https://t-o-m-cat.vercel.app/"
-                           href="https://t-o-m-cat.vercel.app/" target="_blank" class="btn-1">Try It!</a>
-                        <div class="github-container">
-                           <a title="Visit the T.O.M. GitHub repository&#10;https://github.com/om-arya/T.O.M"
-                              href="https://github.com/om-arya/T.O.M" target="_blank"><i class='bx bxl-github'></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-box forward-box twentyfour-box">
-                <img src="assets/project-img/24-img.png" id="twentyfour-img"></img>
-                <div>
-                    <h4>24 Game</h4>
-                    <p>
-                        An online version of "24", a simple arithmetic card game.
-                        <ul>
-                            Built with:
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </p>
-                    <div class="button-container">
-                        <a title="Visit the 24 Game live website&#10;https://24-game.vercel.app/"
-                           href="https://24-game.vercel.app/" target="_blank" class="btn-1">Try It!</a>
-                        <div class="github-container">
-                            <a title="Visit the 24 Game GitHub repository&#10;https://github.com/om-arya/24-Game"
-                               href="https://github.com/om-arya/24-Game" target="_blank"><i class='bx bxl-github'></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TECH STACK -->
-    <section class="tech-stack" id="tech-stack">
-        <h2 class="heading">My Tech Stack</h2>
-        <h3>Some technologies I've worked with and am currently learning include:</h3>
-        <div class="tech-stack-container">
-            <div id="git-img">
-                <img src="assets/tech-stack-img/git.png">
-                <p>Git/Github</p>
-            </div>
-            <div id="react-img">
-                <img src="assets/tech-stack-img/react.svg">
-                <p>React</p>
-            </div>
-            <div id="springboot-img">
-                <img src="assets/tech-stack-img/springboot.png">
-                <p>Spring Boot</p>
-            </div>
-            <div id="django-img">
-                <img src="assets/tech-stack-img/django.png">
-                <p>Django</p>
-            </div>
-            <div id="java-img">
-                <img src="assets/tech-stack-img/java.png">
-                <p>Java</p>
-            </div>
-            <div id="python-img">
-                <img src="assets/tech-stack-img/python.png">
-                <p>Python</p>
-            </div>
-            <div id="javascript-img">
-                <img src="assets/tech-stack-img/javascript.svg">
-                <p>JavaScript</p>
-            </div>
-            <div id="html-img">
-                <img src="assets/tech-stack-img/html5.svg">
-                <p>HTML5</p>
-            </div>
-            <div id="css-img">
-                <img src="assets/tech-stack-img/css3.svg">
-                <p>CSS3</p>
-            </div>
-            <div id="c-img">
-                <img src="assets/tech-stack-img/c.png">
-                <p>C</p>
-            </div>
-            <div id="cpp-img">
-                <img src="assets/tech-stack-img/c++.png">
-                <p>C++</p>
-            </div>
-            <div id="sql-img">
-                <img src="assets/tech-stack-img/sql.svg">
-                <p>SQL</p>
-            </div>
-            <div id="linux-img">
-                <img src="assets/tech-stack-img/linux.png">
-                <p>Linux/CLI</p>
-            </div>
-            <div id="docker-img">
-                <img src="assets/tech-stack-img/docker.webp">
-                <p>Docker</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Let's Connect</h2>
-        <h3>Feel free to reach out with any questions, collaboration ideas, or just to say hello.<br>I'll get back to you as soon as I can.</h3>
-
-        <form action="https://formspree.io/f/mqkrogqy" method="POST">
-            <div class="input-box">
-                <input type="text" name="Full Name" placeholder="Full name*" required>
-                <input type="email" name="Email" placeholder="Email address*" required>
-            </div>
-            <div class="input-box">
-                <input type="number" name="Mobile Number" placeholder="Mobile number">
-                <input type="text" name="Subject" placeholder="Message subject*" required>
-            </div>
-            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your message*" required></textarea>
-            <input title="Send to om.arya0577@gmail.com" type="submit" value="Send message" class="btn-1">
-    </section>
+    <!-- RESUME -->
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>&copy; 2024 by Om Arya | All Rights Reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a title="Back to top" href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-    </footer>
 
     <!-- SCRIPT -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <script src="script.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>
