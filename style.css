@@ -67,14 +67,14 @@ body {
 .visible {
     visibility: visible;
     opacity: 1;
-    transition: opacity .5s ease;
+    transition: opacity .5s linear;
     pointer-events: all;
 }
 
 .hidden {
     visibility: hidden;
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: opacity .5s linear;
     pointer-events: none;
 }
 
@@ -211,7 +211,7 @@ body {
     font-size: 1.2rem;
     background-color: var(--text-third-color);
     color: var(--text-main-color);
-    transition: .3s;
+    transition: box-shadow .3s ease;
     cursor: pointer;
     user-select: none;
 
@@ -301,8 +301,13 @@ body {
     border-radius: 30px;
     color: var(--text-main-color);
     background-color: var(--bg-main-color);
+    transition: box-shadow .3s ease;
     user-select: none;
     cursor: pointer;
+}
+
+.project a:hover {
+    box-shadow: 0 0 .4rem var(--bg-main-color);
 }
 
 /* BACK RIGHT SIDE */
@@ -335,7 +340,7 @@ body {
 
 .table-of-contents a {
     color: var(--text-main-color);
-    transition: .2s ease;
+    transition: color .2s ease;
 }
 
 .table-of-contents a:hover,
@@ -393,7 +398,7 @@ body {
     font-size: 1.2rem;
     background-color: var(--text-third-color);
     color: var(--text-main-color);
-    transition: .3s;
+    transition: box-shadow .3s ease;
     user-select: none;
     cursor: pointer;
 }

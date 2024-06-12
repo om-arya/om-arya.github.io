@@ -7,6 +7,8 @@ const stockRankName = document.querySelector('.stock-rank-name');
 const projectsContainer = document.querySelector('.projects-container');
 
 flipButtonFront.addEventListener('click', () => {
+    scrollToTop();
+
     toggleHighlight(stockRankName);
     
     front.classList.toggle('visible');
@@ -16,15 +18,17 @@ flipButtonFront.addEventListener('click', () => {
 });
 
 flipButtonBack.addEventListener('click', () => {
-    projectsContainer.style["scroll-behavior"] = "auto";
-    projectsContainer.scrollTop = 0;
-    projectsContainer.style["scroll-behavior"] = "smooth";
-
     back.classList.toggle('visible');
     back.classList.toggle('hidden');
     front.classList.toggle('hidden');
     front.classList.toggle('visible');
 });
+
+function scrollToTop() {
+    projectsContainer.style["scroll-behavior"] = "auto";
+    projectsContainer.scrollTop = 15;
+    projectsContainer.style["scroll-behavior"] = "smooth";
+}
 
 const projectNames = document.querySelectorAll('.table-of-contents a');
 
