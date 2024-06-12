@@ -42,8 +42,10 @@ body {
 }
 
 .card {
-    width: 56.7rem;
-    height: 36rem;
+    max-width: 56.7rem;
+    max-height: 36rem;
+    min-width: 56.7rem;
+    min-height: 36rem;
     background-color: var(--bg-main-color);
     box-shadow: 0 0 .4rem var(--bg-main-color);
     overflow: hidden;
@@ -415,63 +417,9 @@ body {
     }
 }
 
-@media screen and (max-width: 910px), (max-height: 650px) {
-    .card {
-        max-width: 40rem;
-        max-height: 25.4rem;
-        min-width: 40rem;
-        min-height: 25.4rem;
-    }
-
-    * {
-        margin-bottom: -1rem;
-    }
-
-    .front .left-side {
-        grid-column: 1 / 2;
-    
-        display: grid;
-        grid-template-rows: 1.1fr 1fr;
-    }
-
-    .header h2 {
-        margin-bottom: -1rem;
-    }
-
-    .header h1 {
-        margin-bottom: -1rem;
-    }
-
-    .description p {
-        margin-bottom: .5rem;
-        font-size: .7rem;
-    }
-
-    .flip-button-front {
-        bottom: -2rem;
-        width: 70%;
-    }
-
-    .projects-container {
-        width: 21.94rem;
-        height: 25.33rem;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 920px), (max-height: 650px) {
     html {
         overflow-x: scroll;
-    }
-
-    .card {
-        position: relative;
-        left: 5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .card {
-        left: 10rem;
+        overflow-y: scroll;
     }
 }
