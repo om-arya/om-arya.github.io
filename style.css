@@ -6,8 +6,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -15,7 +16,7 @@
     --bg-second-color: #d3b766ff;
     --text-main-color: white;
     --text-second-color: #f1c232;
-    --text-third-color: #ff5733;
+    --text-third-color: #e84d42;
 }
 
 html {
@@ -39,13 +40,11 @@ body {
 .card-container {
     width: 100%;
     height: 100%;
-    perspective: 1000px;
 }
 
 .card {
     width: 60%;
     height: 70%;
-    border: solid 1px var(--bg-main-color);
     background-color: var(--bg-main-color);
     box-shadow: 0 0 .4rem var(--bg-main-color);
     overflow: hidden;
@@ -103,6 +102,7 @@ body {
 .header h2 {
     margin-bottom: 1rem;
     font-size: 1.4rem;
+    font-weight: 300;
     color: var(--text-main-color);
 }
 
@@ -127,7 +127,6 @@ body {
 
 .description p {
     font-size: 1.05rem;
-    font-weight: 400;
 }
 
 /* FRONT RIGHT SIDE */
@@ -138,10 +137,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0;
+    padding-top: 4rem;
     width: 100%;
     height: 100%;
-    border-left: solid 1px var(--bg-second-color);
+    border-left: solid .1rem var(--bg-second-color);
     background-color: var(--bg-main-color);
 }
 
@@ -171,6 +170,7 @@ body {
     margin: .6rem 0 0 -.5rem;
     height: 1rem;
     font-size: 1rem;
+    font-weight: 300;
     color: var(--text-main-color);
 }
 
@@ -186,18 +186,21 @@ body {
 .flip-button-front {
     display: flex;
     margin-top: 1rem;
-    width: 50%;
+    width: 53%;
     height: 10%;
-    border-radius: 5%;
+    border-radius: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    font-weight: 400;
     background-color: var(--text-third-color);
     color: var(--text-main-color);
     transition: .3s;
     cursor: pointer;
+    user-select: none;
+
+    position: relative;
+    bottom: 1rem;
 }
 
 .flip-button-front:hover {
@@ -208,10 +211,81 @@ body {
 
 .back .left-side {
     grid-column: 1 / 2;
-
+    
     width: 100%;
     height: 100%;
+
+    position: relative;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    width: 32.85%;
+    height: 69.6%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: solid 1rem var(--bg-main-color);
     background-color: var(--bg-second-color);
+
+    position: fixed;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 1.2rem 1.2rem 2rem 1.2rem;
+    border: solid .07rem var(--bg-main-color);
+    box-shadow: 0 0 .5rem var(--bg-main-color);
+    transition: box-shadow .4s ease;
+}
+
+.project:hover {
+    box-shadow: 0 0 1.5rem var(--bg-main-color);
+}
+
+.project h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.project img {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 15rem;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.project-description span {
+    font-weight: 600;
+}
+
+.project a {
+    display: block;
+    margin: 1rem auto auto auto;
+    padding: 1rem;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    border-radius: 30px;
+    color: var(--text-main-color);
+    background-color: var(--bg-main-color);
+    user-select: none;
+    cursor: pointer;
 }
 
 /* BACK RIGHT SIDE */
@@ -221,23 +295,44 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 4rem 0;
+    align-items: left;
+    padding: 4rem 0 0 4rem;
     width: 100%;
     height: 100%;
-    border-left: solid 1px var(--bg-second-color);
+    border-left: solid .1rem var(--bg-second-color);
     background-color: var(--bg-main-color);
 }
 
-.projects-contents {
-    display: grid;
+.table-of-contents {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 4rem 0 8rem;
 }
 
-.projects-contents h2 {
+.table-of-contents h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
     color: var(--text-main-color);
 }
 
+.table-of-contents a {
+    color: var(--text-main-color);
+    transition: .2s ease;
+}
+
+.table-of-contents a:hover,
+.table-of-contents a.selected {
+    color: var(--text-third-color);
+}
+
+.see-github {
+    align-self: center;
+    margin: .6rem 0 0 -6.4rem;
+}
+
 .see-github p {
+    margin: 0 0 .5rem .4rem;
     font-size: 1rem;
     color: var(--text-main-color);
 }
@@ -269,18 +364,20 @@ body {
 
 .flip-button-back {
     display: flex;
-    margin-top: 1rem;
-    width: 50%;
+    margin: 0 0 0 -4rem;
+    padding: 1rem 0;
+    width: 65%;
     height: 10%;
-    border-radius: 5%;
+    border-radius: 10px;
+    align-self: center;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    font-weight: 400;
     background-color: var(--text-third-color);
     color: var(--text-main-color);
     transition: .3s;
+    user-select: none;
     cursor: pointer;
 }
 
