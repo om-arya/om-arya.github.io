@@ -31,8 +31,8 @@ body {
     height: 100vh;
 
     background-position-x: center;
-    background-position-y: top;
-    background-size: 105vmax;
+    background-position-y: center;
+    background-size: 220vh;
     background-image: url("assets/city_bg.jpeg");
 }
 
@@ -42,8 +42,8 @@ body {
 }
 
 .card {
-    width: 60%;
-    height: 70%;
+    width: 56.7rem;
+    height: 36rem;
     background-color: var(--bg-main-color);
     box-shadow: 0 0 .4rem var(--bg-main-color);
     overflow: hidden;
@@ -238,8 +238,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
-    width: 32.85%;
-    height: 69.6%;
+    width: 31.1rem;
+    height: 35.9rem;
     overflow-x: hidden;
     overflow-y: scroll;
     border: solid 1rem var(--bg-main-color);
@@ -405,4 +405,65 @@ body {
 
 .flip-button-back:hover {
     box-shadow: 0 0 .7rem var(--text-third-color);
+}
+
+@media screen and (max-height: 700px) {
+    body {
+        background-size: 300vh;
+    }
+}
+
+@media screen and (max-width: 910px), (max-height: 650px) {
+    .card {
+        width: 40rem;
+        height: 25.4rem;
+    }
+
+    * {
+        margin-bottom: -1rem;
+    }
+
+    .front .left-side {
+        grid-column: 1 / 2;
+    
+        display: grid;
+        grid-template-rows: 1.3fr .7fr;
+    }
+
+    .header h2 {
+        margin-bottom: -1rem;
+    }
+
+    .header h1 {
+        margin-bottom: -1rem;
+    }
+
+    .description p {
+        font-size: .7rem;
+    }
+
+    .flip-button-front {
+        bottom: -2rem;
+        width: 70%;
+    }
+
+    .projects-container {
+        width: 21.94rem;
+        height: 25.33rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        width: 30rem;
+        height: 19.05rem;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .card {
+        width: 15rem;
+        height: 9.52rem;
+    }
 }
