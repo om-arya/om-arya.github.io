@@ -33,7 +33,7 @@ body {
     background-position-x: center;
     background-position-y: top;
     background-size: 105vmax;
-    background-image: url("assets/dark-pattern-bg.jpeg");
+    background-image: url("assets/city_bg.jpeg");
 }
 
 .card-container {
@@ -99,17 +99,34 @@ body {
 }
 
 .header h2 {
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+    margin-bottom: .8rem;
+    font-size: 1.8rem;
     font-weight: 300;
     color: var(--text-main-color);
 }
 
 .header h1 {
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
     font-size: 4rem;
     color: var(--text-second-color);
     font-family: "El Messiri", "Montserrat", sans-serif;
+}
+
+.header h3 {
+    margin-bottom: .2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--text-main-color);
+}
+
+.header a {
+    height: 1rem;
+    font-weight: 300;
+    color: #4c9de5;
+}
+
+.header a:hover {
+    text-decoration: underline;
 }
 
 /* DESCRIPTION */
