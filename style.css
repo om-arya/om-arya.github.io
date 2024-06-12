@@ -61,19 +61,26 @@ body {
     position: absolute;
 }
 
+.back {
+    width: 100%;
+    height: 100%;
+}
+
 .visible {
     visibility: visible;
     opacity: 1;
     transition: opacity .5s ease;
+    pointer-events: all;
 }
 
 .hidden {
     visibility: hidden;
     opacity: 0;
     transition: opacity .5s ease;
+    pointer-events: none;
 }
 
-.left-side {
+.front .left-side {
     grid-column: 1 / 2;
 
     display: grid;
@@ -123,9 +130,9 @@ body {
     font-weight: 400;
 }
 
-/* RIGHT SIDE */
+/* FRONT RIGHT SIDE */
 
-.right-side {
+.front .right-side {
     grid-column: 2 / 2;
 
     display: flex;
@@ -138,7 +145,7 @@ body {
     background-color: var(--bg-main-color);
 }
 
-.right-side .initials {
+.front .right-side .initials {
     width: 43%;
     height: auto;
     pointer-events: none;
@@ -176,7 +183,7 @@ body {
     display: flex;
 }
 
-.flip-card-button {
+.flip-button-front {
     display: flex;
     margin-top: 1rem;
     width: 50%;
@@ -193,16 +200,90 @@ body {
     cursor: pointer;
 }
 
-.flip-card-button:hover {
+.flip-button-front:hover {
     box-shadow: 0 0 .7rem var(--text-third-color);
 }
 
-/* PROJECTS */
+/* BACK LEFT SIDE */
 
-.projects-display {
+.back .left-side {
     grid-column: 1 / 2;
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-second-color);
 }
 
-.projects-display h1 {
-    color: white;
+/* BACK RIGHT SIDE */
+
+.back .right-side {
+    grid-column: 2 / 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    width: 100%;
+    height: 100%;
+    border-left: solid 1px var(--bg-second-color);
+    background-color: var(--bg-main-color);
+}
+
+.projects-contents {
+    display: grid;
+}
+
+.projects-contents h2 {
+    color: var(--text-main-color);
+}
+
+.see-github p {
+    font-size: 1rem;
+    color: var(--text-main-color);
+}
+
+.see-github i {
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    font-size: 2.5rem;
+    color: var(--text-main-color);
+}
+
+.see-github a {
+    margin: .6rem 0 0 -.5rem;
+    height: 1rem;
+    font-size: 1rem;
+    color: var(--text-main-color);
+}
+
+.see-github a:hover {
+    color: var(--text-third-color);
+    text-decoration: underline;
+}
+
+.see-github .container {
+    display: flex;
+}
+
+.flip-button-back {
+    display: flex;
+    margin-top: 1rem;
+    width: 50%;
+    height: 10%;
+    border-radius: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-color: var(--text-third-color);
+    color: var(--text-main-color);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.flip-button-back:hover {
+    box-shadow: 0 0 .7rem var(--text-third-color);
 }
