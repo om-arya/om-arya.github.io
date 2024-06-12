@@ -4,9 +4,11 @@ const front = document.querySelector('.front');
 const back = document.querySelector('.back');
 
 const stockRankName = document.querySelector('.stock-rank-name');
+const projectsContainer = document.querySelector('.projects-container');
 
 flipButtonFront.addEventListener('click', () => {
     toggleHighlight(stockRankName);
+    
     front.classList.toggle('visible');
     front.classList.toggle('hidden');
     back.classList.toggle('hidden');
@@ -14,6 +16,10 @@ flipButtonFront.addEventListener('click', () => {
 });
 
 flipButtonBack.addEventListener('click', () => {
+    projectsContainer.style["scroll-behavior"] = "auto";
+    projectsContainer.scrollTop = 0;
+    projectsContainer.style["scroll-behavior"] = "smooth";
+
     back.classList.toggle('visible');
     back.classList.toggle('hidden');
     front.classList.toggle('hidden');
@@ -43,8 +49,6 @@ projectNames.forEach((projectName) => {
     projectName.addEventListener('click', () => toggleHighlight(projectName));
 });
 
-
-const projectsContainer = document.querySelector('.projects-container');
 const scrollThreshold = 200;
 
 let prevScrollTop = projectsContainer.scrollTop;

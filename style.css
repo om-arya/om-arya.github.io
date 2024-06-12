@@ -8,7 +8,6 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-decoration: none;
-    scroll-behavior: smooth;
 }
 
 :root {
@@ -228,6 +227,7 @@ body {
     overflow-y: scroll;
     border: solid 1rem var(--bg-main-color);
     background-color: var(--bg-second-color);
+    scroll-behavior: smooth;
 
     position: fixed;
 }
@@ -328,7 +328,7 @@ body {
 
 .see-github {
     align-self: center;
-    margin: .6rem 0 0 -6.4rem;
+    margin: .35rem 0 0 -6.4rem;
 }
 
 .see-github p {
