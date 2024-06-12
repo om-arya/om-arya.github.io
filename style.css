@@ -19,8 +19,8 @@
 }
 
 html {
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
@@ -460,6 +460,10 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+    html {
+        overflow-x: scroll;
+    }
+
     .card {
         position: relative;
         left: 5rem;
@@ -468,7 +472,6 @@ body {
 
 @media screen and (max-width: 480px) {
     .card {
-        position: relative;
         left: 10rem;
     }
 }
