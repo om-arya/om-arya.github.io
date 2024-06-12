@@ -36,15 +36,41 @@ body {
     background-image: url("assets/dark-pattern-bg.jpeg");
 }
 
+.card-container {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
 .card {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
     width: 60%;
     height: 70%;
     border: solid 1px var(--bg-main-color);
     background-color: var(--bg-main-color);
     box-shadow: 0 0 .4rem var(--bg-main-color);
     overflow: hidden;
+
+    position: relative;
+}
+
+.card .front,
+.card .back {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+
+    position: absolute;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease;
 }
 
 .left-side {
@@ -148,4 +174,35 @@ body {
 
 .social-media .container {
     display: flex;
+}
+
+.flip-card-button {
+    display: flex;
+    margin-top: 1rem;
+    width: 50%;
+    height: 10%;
+    border-radius: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-color: var(--text-third-color);
+    color: var(--text-main-color);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.flip-card-button:hover {
+    box-shadow: 0 0 .7rem var(--text-third-color);
+}
+
+/* PROJECTS */
+
+.projects-display {
+    grid-column: 1 / 2;
+}
+
+.projects-display h1 {
+    color: white;
 }
