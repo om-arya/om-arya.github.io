@@ -264,7 +264,7 @@ body {
 }
 
 .project:hover {
-    box-shadow: 0 0 1.5rem var(--bg-main-color);
+    box-shadow: 0 0 1rem var(--bg-main-color);
 }
 
 .project h2 {
@@ -282,10 +282,19 @@ body {
     user-select: none;
 }
 
-.vibify-img {
+#vibify-img {
     padding: .5rem 1rem;
     border-radius: 10px;
     background: rgba(236, 236, 236, 0.8);
+}
+
+#finsight-img {
+    width: 12rem;
+}
+
+#tom-img {
+    width: 11rem;
+    border-radius: 20px;
 }
 
 .project-description {
@@ -358,7 +367,7 @@ body {
 
 .table-of-contents a {
     color: var(--text-main-color);
-    transition: color .2s ease;
+    transition: color .15s ease;
 }
 
 .table-of-contents a:hover,
