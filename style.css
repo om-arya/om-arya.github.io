@@ -33,7 +33,7 @@ body {
     background-position-x: center;
     background-position-y: center;
     background-size: 220vh;
-    background-image: url("assets/city_bg.jpeg");
+    background-image: url("assets/white-pattern-bg.avif");
 }
 
 .card-container {
@@ -215,7 +215,7 @@ body {
     font-size: 1.2rem;
     background-color: var(--text-third-color);
     color: var(--text-main-color);
-    transition: box-shadow .3s ease;
+    transition: box-shadow .2s ease;
     cursor: pointer;
     user-select: none;
 
@@ -260,7 +260,7 @@ body {
     padding: 1.2rem 1.2rem 2rem 1.2rem;
     border: solid .07rem var(--bg-main-color);
     box-shadow: 0 0 .5rem var(--bg-main-color);
-    transition: box-shadow .4s ease;
+    transition: box-shadow .2s ease;
 }
 
 .project:hover {
@@ -282,13 +282,27 @@ body {
     user-select: none;
 }
 
+.vibify-img {
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background: rgba(236, 236, 236, 0.8);
+}
+
 .project-description {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    text-align: center;
     justify-content: center;
+}
+
+.project-description p {
+    text-align: center;
+}
+
+.project-description p,
+.project-description ul {
+    font-size: 1.1rem;
 }
 
 .project-description span {
@@ -305,7 +319,7 @@ body {
     border-radius: 30px;
     color: var(--text-main-color);
     background-color: var(--bg-main-color);
-    transition: box-shadow .3s ease;
+    transition: box-shadow .2s ease;
     user-select: none;
     cursor: pointer;
 }
@@ -333,7 +347,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: .8rem;
-    padding: 4rem 0 8rem;
+    padding: 4rem 0 6.3rem;
 }
 
 .table-of-contents h1 {
@@ -353,8 +367,8 @@ body {
 }
 
 .see-github {
+    margin-left: -6.4rem;
     align-self: center;
-    margin: .35rem 0 0 -6.4rem;
 }
 
 .see-github p {
@@ -402,7 +416,7 @@ body {
     font-size: 1.2rem;
     background-color: var(--text-third-color);
     color: var(--text-main-color);
-    transition: box-shadow .3s ease;
+    transition: box-shadow .2s ease;
     user-select: none;
     cursor: pointer;
 }

@@ -3,13 +3,13 @@ const flipButtonBack = document.querySelector('.flip-button-back');
 const front = document.querySelector('.front');
 const back = document.querySelector('.back');
 
-const stockRankName = document.querySelector('.stock-rank-name');
+const primaryName = document.querySelector('.table-of-contents a');
 const projectsContainer = document.querySelector('.projects-container');
 
 flipButtonFront.addEventListener('click', () => {
     scrollToTop();
 
-    toggleHighlight(stockRankName);
+    toggleHighlight(primaryName);
     
     front.classList.toggle('visible');
     front.classList.toggle('hidden');
