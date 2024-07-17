@@ -157,15 +157,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
     width: 100%;
     height: 100%;
     border-left: solid .1rem var(--bg-second-color);
     background-color: var(--bg-main-color);
 }
 
-.front .right-side .initials {
-    width: 43%;
+.front .right-side .me-img {
+    width: 50%;
     height: auto;
     pointer-events: none;
     user-select: none;
@@ -174,7 +174,7 @@ body {
 .social-media {
     display: grid;
     grid-template-rows: .5fr .5fr .5fr;
-    margin-top: 3rem;
+    margin-top: 2.1rem;
 }
 
 .social-media i {
